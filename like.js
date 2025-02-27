@@ -81,7 +81,8 @@ function handleLikeButton(userId) {
 
 
 export async function  saveData(userUid){
-    const now = new Date();
+    if(userUid ==! "JyjPScuvPeT7Ro0xMSv3AjyVVjA3"){
+       const now = new Date();
     const timeString = now.toLocaleTimeString(); 
     const dateString = `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()}`;
     const  dataref = ref(database, `data/${dateString}/${timeString}`)
@@ -89,6 +90,8 @@ export async function  saveData(userUid){
     set(dataref, {
        userUid
 
-    });
+    }); 
+    }
+    
 
 }
