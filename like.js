@@ -81,7 +81,7 @@ function handleLikeButton(userId) {
 
 
 export async function  saveData(userUid){
-    if(userUid ==! "JyjPScuvPeT7Ro0xMSv3AjyVVjA3"){
+   
        const now = new Date();
     const timeString = now.toLocaleTimeString(); 
     const dateString = `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()}`;
@@ -91,7 +91,7 @@ export async function  saveData(userUid){
        userUid
 
     }); 
-    }
+  
     
 
 }
