@@ -53,7 +53,7 @@ export function loadMessages() {
             const messageElement = document.createElement('div');
             messageElement.innerHTML = ` 
             <section> 
-            <h4 class="username">${message.name}:</h4>
+            <h4 class="username">${message.name}</h4>:
             <h4 class="messageContant">${message.text} </h4>
             </section>
        
